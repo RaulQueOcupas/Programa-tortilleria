@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+				<meta charset="UTF-8">
+				<title>Voz para  Ernesto </title>
+				
+				<style>
+								*{
+								padding:0px;
+								margin:0px;
+								}
+								
+								body {
+								background:#ededed;
+								}
+								
+								div {
+												
+												
+												
+												padding:30px;
+												background:#fff;
+												margin:50px;
+								}
+								
+								input{
+								padding:9px;
+								font-size:18px;
+								border:solid 1px #aaa;
+								width:60%;
+								}
+				</style>
+</head>
+<body>
+				<div>
+								<input type="twxt" id="texto">
+								<input type="button" id="hablar" value="decir">
+				</div>
+				
+				<script>
+								document.getElementById('hablar').addEventListener("click",()=>{ decir(document.getElementById("texto").value); }); function decir(texto){ speechSynthesis.speak(new SpeechSynthesisUtterance(texto)); }
+				</script>
+</body>
+</html>
