@@ -1,183 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-				<meta charset="UTF-8">
-				<title>inicio-panaderia </title>
-				<style>
-								.centrado{
-												text-align:center;
-											 color:;
-								}
-								body{
-												background-color:#f5f5dc;
-								}
-								p{
-												font-size:1em;
-								}
-								img{
-												display: block;
- margin: 0px auto;
-								}
-					a{
-									color:yellow;
-									background:orange;
-					}
-		
-				</style>
+    <meta charset="UTF-8">
+    <title>Chat bot para cuentas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    
 </head>
 <body>
+    
+    <a href={"https://api.whatsapp.com/send?phone=5412345678&amp;text="+ fixedEncodeURIComponent("El Producto es " + pagacon)}>Enviar por WhatsApp></a>
+  <script>
+   var preciokilo=24, cantidad=0;
+   
+     document.write("<center><h1>Totales a cobrar por medios y kilos a $24 y sobrante por cambio a entregar</h1></center>");
+   
+   function inicio(){
+   document.write("<center><h1>Totales a cobrar por medios y kilos a $24 y sobrante por cambio a entregar</h1></center>");
+   
+   cantidad=prompt("Cantidad que compro el cliente");
+   pagacon=prompt("Cantidad con la que pagp el cliente");
 
-	<h2 class="centrado">Panaderia  y pizzeria Paco's</h2>
 
-				<center>
-<h3 id="centrado"> Haz tu pedido aqui </h3>
-</center>
- <script type="text/javascript">
- 				
- 			
- 				
- 				
- 				
- 				
- 				function llamando(){
- 				
- 				 document.getElementById("centrado").textContent="🏍️⬇️🛃"; 
- 				 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando,4000);
- 				 
- 				 
- 				 
- 				 function llamando2(){
- 				
- 				 document.getElementById("centrado").textContent="Haz tu pedido por WhatsApp"; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando2,7000);
- 				 
- 				 function llamando3(){
- 				
- 				 document.getElementById("centrado").textContent="🏍️⬇️🛃"; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando3,10000);
- 				 
- 				 				 function llamando4(){
- 				
- 				 document.getElementById("centrado").textContent="Elige el producto y pedir esto"; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando4,13000);
- 				 
- 				 function llamando5(){
- 				
- 				 document.getElementById("centrado").textContent="🏍️⬇️🛃 "; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando5,16000);
- 				 
- 				 
- 				 			 
- 				 function llamando6(){
- 				
- 				 document.getElementById("centrado").textContent="❌❌No modifiques el mensaje al entrar en WhatsApp solo envíalo tal cual esta para realizar tu orden"; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando6,19000);
- 				 
- 				 			 function llamando8(){
- 				
- 				 document.getElementById("centrado").textContent="✔️✔️Te acumularemos por cada compra, una bonificacion en productos participantes para más información entra en: www.google.com"; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando8,25000);
- 				 
- 		//terminado 1
- 		
- 		
- 		
- 		 				
- 				
- 				function llamando(){
- 				
- 				 document.getElementById("centrado").textContent="🏍️⬇️🛃"; 
- 				 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando,31000);
- 				 
- 				 
- 				 
- 				 function llamando2(){
- 				
- 				 document.getElementById("centrado").textContent="Haz tu pedido por WhatsApp"; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando2,7000);
- 				 
- 				 function llamando3(){
- 				
- 				 document.getElementById("centrado").textContent="🏍️⬇️🛃"; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando3,34000);
- 				 
- 				 				 function llamando4(){
- 				
- 				 document.getElementById("centrado").textContent="Elige el producto y pedir este "; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando4,34000);
- 				 
- 				 function llamando5(){
- 				
- 				 document.getElementById("centrado").textContent="🏍️⬇️🛃 "; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando5,37000);
- 				 
- 				 
- 				 			 
- 				 function llamando6(){
- 				
- 				 document.getElementById("centrado").textContent="❌❌No modifiques el mensaje al entrar en WhatsApp solo envíalo tal cual esta para realizar tu orden"; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando6,41000);
- 				 
- 				 			 function llamando8(){
- 				
- 				 document.getElementById("centrado").textContent="✔️✔️Te acumularemos por cada compra, una bonificacion en productos participantes para más información entra en: www.google.com"; 
- 				 
- 				 }
- 				 
- 				 setTimeout(llamando8,46000);
- 				 
- 				 </script>
- 				 
- 				 <br><br><br>
- 				 <div>
- 				 <img src="pch.jpg" width="170" height="150">
- 				 <p>Mini pizza de peperoni con chorizo ideal para una persona infante o adulta formato redondo</p>
- 				 </div>
- 				 <center>
- 				 				<br>
- 				 <a href="https://api.whatsapp.com/send?phone=523339539360&text=hola,%20qué%20tal?	">Pedir esto</a>
- 				 </center>
- 				
+   
+document.write("<h2>Cantidad que compro el cliente\t"+cantidad);
+document.write("<h2>Cantidad que pagara el cliente$\t"+cantidad*preciokilo);
+document.write("<h2>Cantidad con la que pagara el cliente$\t"+pagacon);
+document.write("<h2>Cantidad que le sobra al cliente$<br>");
+ document.write(pagacon-preciokilo);
+ 
+ 
+   /*
+ 
+ if(cant=="1"){
+       
+  document.write("<style>.verde{color:green;}.rojo{color:red;}</style><h2 class='verde'>1 kilo=$24</h2><br><h2 class='rojo'>Sobrantes: <br>$24=$0<br>$30=$6<br>$50=$26<br>$100=$76<br>$200=$176<br>$300=$276<br>$500=$476</h2>");
+ }
+ 
+ 
+ if(cant=="1.50"){
+       
+  document.write("<style>.verde{color:green;}.rojo{color:red;}</style><h2 class='verde'>1.5 kilo=$36</h2><br><h2 class='rojo'>Sobrantes: <br>$36=$0<br>$50=$14<br>$100=$64<br>$200=$164<br>$500=$464");
+ }
+ 
+ 
+ if(cant=="2"){
+       
+  document.write("<style>.verde{color:green;}.rojo{color:red;}</style><h2 class='verde'>2 kilos=$48</h2><br><h2 class='rojo'>Sobrantes: <br>$48=$0<br>$50=$2<br>$100=$52<br>$200=$152<br>$500=$452");
+ }
+ 
+ 
+ if(cant=="2.50"){
+       
+  document.write("<style>.verde{color:green;}.rojo{color:red;}</style><h2 class='verde'>2.50 kilos=$60</h2><br><h2 class='rojo'>Sobrantes: <br>$60=$0<br>$100=$40<br>$200=$140<br>$500=$440");
+ }
+ 
+ if(cant=="3"){
+       
+  document.write("<style>.verde{color:green;}.rojo{color:red;}</style><h2 class='verde'>3 kilos=$72</h2><br><h2 class='rojo'>Sobrantes: <br>$72=$0<br>$100=$40<br>$200=$140<br>$500=$440");
+ }
+ */
+ 
+   }
+   setTimeout(inicio,2000);
+  </script>  
 </body>
 </html>
