@@ -1,116 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta charset="UTF-8">
-    <title>Chat bot para cuentas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
     <style>
-        .yellow{
-            color:white;
-            background:yellow;
+        h1{
+            color:yellow;
+            background:blue;
         }
+        
+        .verde{
+            background:green;
+            color:white;
+            border-radius: 32px;
+            font-size: 20px;
+        }
+        
+           .naranja{
+            background:orange;
+            color:green;
+            border-radius: 32px;
+            font-size: 20px;
+        }
+        
+           .amarillo{
+            background:yellow;
+            color:red;
+            border-radius: 32px;
+            font-size: 20px;
+        }
+        
     </style>
-    
 </head>
 <body>
     <center>
-         <div class="yellow">
-    <button onclick="primera()">Primera
-    </button>
-    <br><br>
-    <button onclick="segunda()">Segunda
-    </button>
-    <br><br>
-    <button onclick="tercera()">Tercera 
-    </button>
-    <br><br>
-    <button onclick="cuarta()">Cuarta
-    </button>
-    <br><br>
-    <button onclick="quinta()">Quinta
-    </button>
-    <br><br>
-    <button onclick="sexta()">Sexta
-    </button>
-    <br><br>
-    <button onclick="septima()">Septima
-    </button>
-    <br><br>
-    <button onclick="octava()">Octava
-    </button>
-    <br><br>
-    <button onclick="novena()">Novena
-    </button>
-    <br><br>
-    <button onclick="decima()">Decima
-    </button>
-    <br><br>
+        <h1>
+            Tamaño de pizza y precio (area venta)
+        </h1>
+        
     
-    </center>
-    </div>
+    
+    <button class="verde" onclick="x1()">X1 Pizza</button>
+  &nbsp &nbsp <button class="naranja" onclick="x2()">X2 Pizzas</button>
+      &nbsp &nbsp<button class="amarillo" onclick="x3()">X3 Pizzas</button>
+      
+      </center>
+      
+      
   <script>
+      function x1(){
       
-    function primera(){
-        document.write("<h1>Ir a: Tienda de lomas señor de 7:35 am<br>Entregar: 4 medios </h1>");
-    }
+document.write("<center><h1>Tamaño de pizza y precio(area de venta)</h1></center>");
       
-      function segunda(){
-        document.write("<h1>Ir a:Con el taquero<br>Entregar: 4 kilos </h1>");
-    }
-      function tercera(){
-        document.write("<h1>Ir a: Chema 8 medios(lunes a viernes)<br>Entregar: 8 medios ($23) </h1>");
-    }
-    
-    function cuarta(){
-        document.write("<h1>Ir a: Tienda Aguilillas <br>Entregar: 4 kilos y 6 medios ($23)) </h1>");
-    }
-    
-    
-      function quinta(){
-        document.write("<h1>Ir a: Lona roja<br>Entregar: 2 medios </h1>");
-    }
-    function sexta(){
-        document.write("<h1>Ir a: Entrada de adobes<br>Entregar: 4 medios </h1>");
-    }
-    
-    function septima(){
-        document.write("<h1>Ir a:Yola adobes<br>Entregar: 6 medios </h1>");
-    }
-    
-    function octava(){
-        document.write("<h1>Ir a: Tienda de espaldas de adobes debajo yola<br>Entregar: 4 medios </h1>");
-    }
-    function novena(){
-        document.write("<h1>Ir a:Arroyos Chuy<br>Entregar: 2 kilos y 6 medios </h1>");
-    }
-    function decima(){
-        document.write("<h1>Ir a: Tienda segunda arroyos<br>Entregar: 5 kilos y 10 medios</h1>");
-    }    
-   var preciokilo=24, cantidad=0,pagacon=0;
    
-     document.write("<center><h1>Totales a cobrar por medios y kilos a $24 y sobrante por cambio a entregar</h1></center>");
-   
-   function inicio(){
-   document.write("<center><h1>Totales a cobrar por medios y kilos a $24 y sobrante por cambio a entregar</h1></center>");
-   
-   cantidad=prompt("Cantidad que compro el cliente");
-   
-document.write("<h2>Cantidad que compro el cliente\t"+cantidad);
-document.write("<h2>Cantidad que pagara el cliente$\t"+cantidad*preciokilo);
+      
+      
+      function temp(){
+      
 
- 
- 
- }
- setTimeout(inicio,3000);
+      for(i=0; i<1;i++){
+      pza=prompt("Ingresa tamaño de la piza i=individual\n ch=ch\nm=Mediana g=grande f=familiar");
+      
+      switch(pza){
+          case "i":
+          document.write("<h2>Tamaño de pizza entregada: (i)Individual<br>Precio:$60</h2>");
+          break;
+          
+           case "ch":
+          document.write("<br><br><h2>Tamaño de pizza entregada: (ch)Chica<br>Precio:$105</h2>");
+          break;
+          
+          case "m":
+          document.write("<br><br><h2>Tamaño de pizza entregada: (m)Mediana<br>Precio:$140</h2>");
+          break;
+          
+          case "g":
+          document.write("<br><br><h2>Tamaño de pizza entregada: (g)Grande<br>Precio:$165</h2>");
+          break;
+          
+          case "f":
+          document.write("<br><br><h2>Tamaño de pizza entregada: (f)Familiar<br>Precio:$187</h2>");
+          break;
+      }
+      }
+      }
+      
+      setTimeout(temp,15000);
+      setTimeout(temp,30000);
+      setTimeout(temp,45000);
+      
+      
+      
+      function temp2(){
+      
+
+      for(i=0; i<1;i++){
+      pza=prompt("Ingresa tamaño de la piza i=individual\n ch=ch\n");
+      
+      switch(pza){
+          case "i":
+          document.write("<h2>Tamaño de pizza entregada: (i)Individual<br>Precio:$60</h2>");
+          break;
+          
+           case "ch":
+          document.write("<br><h2>Tamaño de pizza entregada: (ch)Chica<br>Precio:$105</h2>");
+          break;
+          
+             case "m":
+          document.write("<br><br><h2>Tamaño de pizza entregada: (m)Mediana<br>Precio:$140</h2>");
+          break;
+          
+          case "g":
+          document.write("<br><br><h2>Tamaño de pizza entregada: (g)Grande<br>Precio:$165</h2>");
+          break;
+          
+          case "f":
+          document.write("<br><br><h2>Tamaño de pizza entregada: (f)Familiar<br>Precio:$187</h2>");
+      }
+      }
+      }
+      
+     setInterval(temp2,1800000);
+     
+     
+      }
+      
+      
+  </script>
    
- function inicio2(){
-     pagacon=prompt("Recuerda que esto pagara:\t"+cantidad*preciokilo+"\nCantidad con la que pago el cliente");
-     document.write("<h2>Cantidad con la que pagara el cliente$\t"+pagacon);
-document.write("<h2>Cantidad que le sobra al cliente$<br>");
-document.write(preciokilo*cantidad-pagacon);
- }
-   setTimeout(inicio2,10000);
-  </script>  
 </body>
 </html>
